@@ -1,0 +1,17 @@
+# Python & Environment
+*.egg-info/
+.venv/
+env/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Challenge Datasets (Do NOT commit upstream release archives per SUBMISSION.md)
+challenge_data/*.csv.gz
+*.tar.gz
+*.gz
+
+# OS specific
+.DS_Store
+Thumbs.db

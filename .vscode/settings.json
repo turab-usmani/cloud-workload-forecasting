@@ -1,0 +1,11 @@
+{
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/src",
+        "${workspaceFolder}/sol3/src"
+    ],
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}/src",
+        "${workspaceFolder}/sol3/src"
+    ]
+}
+

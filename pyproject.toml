@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cloud-workload-forecasting"
+version = "1.0.0"
+description = "Cloud Workload Forecasting & Capacity Planning Engine"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.0",
+    "scipy>=1.11",
+    "lightgbm>=4.0",
+    "statsmodels>=0.14",
+    "scikit-learn>=1.3",
+    "matplotlib>=3.8"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+cwfc-predict = "cwfc.predict:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
